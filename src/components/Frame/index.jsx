@@ -60,10 +60,7 @@ export default function Frame({
       </Text>
       <mesh
         name={id}
-        onDoubleClick={(e) => (
-          e.stopPropagation(), setLocation("/item/" + e.object.name)
-        )}
-        onTouchEnd={(e) => (
+        onClick={(e) => (
           e.stopPropagation(), setLocation("/item/" + e.object.name)
         )}
         onPointerOver={(e) => hover(true)}
