@@ -63,6 +63,9 @@ export default function Frame({
         onDoubleClick={(e) => (
           e.stopPropagation(), setLocation("/item/" + e.object.name)
         )}
+        onDoubleTouch={(e) => (
+          e.stopPropagation(), setLocation("/item/" + e.object.name)
+        )}
         onPointerOver={(e) => hover(true)}
         onPointerOut={() => hover(false)}
       >
